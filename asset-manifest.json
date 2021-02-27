@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-material-ui-sample/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/react-material-ui-sample/static/js/main.d67047c8.chunk.js",
+    "main.js.map": "/react-material-ui-sample/static/js/main.d67047c8.chunk.js.map",
+    "runtime-main.js": "/react-material-ui-sample/static/js/runtime-main.747bbcbd.js",
+    "runtime-main.js.map": "/react-material-ui-sample/static/js/runtime-main.747bbcbd.js.map",
+    "static/js/2.7fd69d52.chunk.js": "/react-material-ui-sample/static/js/2.7fd69d52.chunk.js",
+    "static/js/2.7fd69d52.chunk.js.map": "/react-material-ui-sample/static/js/2.7fd69d52.chunk.js.map",
+    "static/js/3.ea006ca4.chunk.js": "/react-material-ui-sample/static/js/3.ea006ca4.chunk.js",
+    "static/js/3.ea006ca4.chunk.js.map": "/react-material-ui-sample/static/js/3.ea006ca4.chunk.js.map",
+    "index.html": "/react-material-ui-sample/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/react-material-ui-sample/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.7fd69d52.chunk.js.LICENSE.txt": "/react-material-ui-sample/static/js/2.7fd69d52.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-material-ui-sample/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.747bbcbd.js",
+    "static/js/2.7fd69d52.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.d67047c8.chunk.js"
+  ]
+}
