@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -17,7 +17,7 @@ function App() {
               <Link to="/products">products</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <Switch>
           <Route path="/" exact>
@@ -29,12 +29,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-    // <Router>
-    //   <Switch>
-    //     <Route path="/" exact component={HomePage} />
-    //     <Route path="/products" component={ProductPage} />
-    //   </Switch>
-    // </Router>
   );
 }
 
