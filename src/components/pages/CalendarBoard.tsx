@@ -1,5 +1,9 @@
 import React from "react";
+import { GridList } from "@material-ui/core";
 import GenericTemplate from "../templates/GenericTemplate";
+
+// import * as styles from "../pages/CalendarBoard.css";
+
 const calendar = [
   "29",
   "30",
@@ -41,7 +45,18 @@ const calendar = [
 const CalendarBoard: React.FC = () => {
   return (
     <GenericTemplate title="カレンダー">
-      <>カレンダージ内容</>
+      <div>
+        <GridList
+          // className={styles.grid}
+          cols={7}
+          spacing={0}
+          cellHeight="auto"
+        >
+          {calendar.map((c) => (
+            <li>{c}</li>
+          ))}
+        </GridList>
+      </div>
     </GenericTemplate>
   );
 };
