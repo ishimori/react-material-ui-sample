@@ -5,12 +5,17 @@ import ProductPage from "./components/pages/ProductPage";
 import HomePage from "./components/pages/HomePage";
 import CalendarPage from "./components/pages/CalendarBoard/index";
 
+import dayjs from "dayjs";
+import "dayjs/locale/ja";
+
+dayjs.locale("ja");
+
 function App() {
   return (
     <Router>
       <div>
         <nav>
-          <ul>
+          <ul className="nav">
             <li>
               <Link to="/">Home</Link>
             </li>
