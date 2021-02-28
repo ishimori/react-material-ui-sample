@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import ProductPage from "./components/pages/ProductPage";
 import HomePage from "./components/pages/HomePage";
-import CalendarPage from "./components/pages/CalendarBoard";
+import CalendarPage from "./components/pages/CalendarBoard/index";
 
 function App() {
   return (

@@ -13,6 +13,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
+    "css-module-types": "^0.2.2",
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -25,7 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-	"deploy": "yarn build && gh-pages -d build",
+    "deploy": "yarn build && gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "homepage": "http://ishimori.github.io/react-material-ui-sample",
@@ -46,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.1",
+    "node-sass": "^5.0.0"
   }
 }
