@@ -1,18 +1,15 @@
 import React from "react";
 import CalendarElement from "../CalendarElement";
-import { createCalendar } from "../../../services/calendar";
+// import { createCalendar } from "../../../services/calendar";
 import GenericTemplate from "../../templates/GenericTemplate";
 import { GridList, Typography } from "@material-ui/core";
-// import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
-// import ArrowForwardIos from "@material-ui/icons/ArrowForwardIos";
-// import DehazeIcons from "@material-ui/icons/Dehaze";
 
 import "./style.scss";
 
-const calendar = createCalendar();
+// const calendar = createCalendar();
 const days = ["日", "月", "火", "水", "木", "金", "土"];
 
-const CalendarBoard = () => {
+const CalendarBoard = ({ calendar }) => {
   return (
     <GenericTemplate title="カレンダー">
       <div className="container">
@@ -30,7 +27,7 @@ const CalendarBoard = () => {
               </Typography>
             </li>
           ))}
-          {calendar.map((c: any) => (
+          {calendar.map((c) => (
             <li key={c.toISOString()}>
               <CalendarElement day={c} />
             </li>

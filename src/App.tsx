@@ -3,12 +3,18 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import ProductPage from "./components/pages/ProductPage";
 import HomePage from "./components/pages/HomePage";
-import CalendarPage from "./components/pages/CalendarBoard/index";
+import CalendarPage from "./components/pages/CalendarBoard/container";
+
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import rootReducer from "./redux/rootReducer";
 
 import dayjs from "dayjs";
 import "dayjs/locale/ja";
 
 dayjs.locale("ja");
+
+const store = createStore(rootReducer);
 
 function App() {
   return (
@@ -36,7 +42,9 @@ function App() {
             <ProductPage />
           </Route>
           <Route path="/calendar" exact>
-            <CalendarPage />
+            <Provider store={store}>
+              <CalendarPage />
+            </Provider>
           </Route>
         </Switch>
       </div>

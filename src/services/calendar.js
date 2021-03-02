@@ -1,10 +1,13 @@
 import dayjs from "dayjs";
 
-export const createCalendar = () => {
-  // 今月の最初の日を追加
-  const firstDay = dayjs().startOf("month");
-  // 曜日
+export const createCalendar = (month) => {
+  // // 今月の最初の日を追加
+  // const firstDay = dayjs().startOf("month");
+  // // 曜日
+  // const firstDayIndex = firstDay.day();
+  const firstDay = getMonth(month);
   const firstDayIndex = firstDay.day();
+  // console.log(firstDay);
   return Array(35)
     .fill(0)
     .map((_, i) => {
@@ -13,6 +16,9 @@ export const createCalendar = () => {
       const day = firstDay.add(diffFromFirstDay, "day");
       return day;
     });
+};
+export const getMonth = ({ year, month }) => {
+  return dayjs(`${year} - ${month}`);
 };
 
 export const isSameDay = (d1, d2) => {
