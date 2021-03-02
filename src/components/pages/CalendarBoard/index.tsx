@@ -3,6 +3,10 @@ import CalendarElement from "../CalendarElement";
 import { createCalendar } from "../../../services/calendar";
 import GenericTemplate from "../../templates/GenericTemplate";
 import { GridList, Typography } from "@material-ui/core";
+// import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
+// import ArrowForwardIos from "@material-ui/icons/ArrowForwardIos";
+// import DehazeIcons from "@material-ui/icons/Dehaze";
+
 import "./style.scss";
 
 const calendar = createCalendar();
