@@ -11,6 +11,7 @@ import rootReducer from "./redux/rootReducer";
 
 import dayjs from "dayjs";
 import "dayjs/locale/ja";
+import Navigation from "./components/Navigation/presentation";
 
 dayjs.locale("ja");
 
@@ -43,6 +44,7 @@ function App() {
           </Route>
           <Route path="/calendar" exact>
             <Provider store={store}>
+              <Navigation />
               <CalendarPage />
             </Provider>
           </Route>
